@@ -5,36 +5,31 @@
  *Return: Always 0 (Success/completed)
  */
 int main(void)
-
 {
-	int number_left;
-	int number_right;
+		int c;
+			int d = 0;
 
+				while (d < 10)
+						{
+									c = 0;
+											while (c < 10)
+														{
+																		if (d != c && d < c)
+																						{
+																											putchar('0' + d);
+																															putchar('0' + c);
 
-	for (number_left = 48; number_left <= 57; number_left++)
-	{
-		for (number_right = number_left + 1 ; number_right <= 57; number_right++)
-		{
+																																			if (c + d != 17)
+																																								{
+																																														putchar(',');
+																																																			putchar(' ');
+																																																							}
+																																						}
 
-			putchar(number_left);
-			putchar (number_right);
-
-
-			if ((number_left == 47) && (number_right == 57))
-			{
-				break;
-			}
-			putchar(',');
-			putchar(' ');
-		}
-
-
-	}
-
-	putchar('\n');
-
-
-	return (0);
-
-
+																					c++;
+																							}
+													d++;
+														}
+					putchar('\n');
+						return (0);
 }
