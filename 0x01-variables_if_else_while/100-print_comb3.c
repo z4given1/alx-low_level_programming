@@ -2,20 +2,20 @@
 /**
  * main - E
  *
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
 	int i;
 	int k;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 48; i <= 78; i++)
 	{
-		for (k = 48; k <= 57; k++)
+		for (k = i+1; k <= 78; k++)
 		{
 			putchar(i);
 			putchar(k);
-			if (i == k || i == 57 && k == 57)
+			if ((i == 59) && (k == 57))
 			{
 				break;
 			}
