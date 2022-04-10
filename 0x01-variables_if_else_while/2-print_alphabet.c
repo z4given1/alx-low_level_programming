@@ -7,6 +7,7 @@
 int main(void)
 {
 	char alli;
+
 	for (alli = 'a'; alli <= 'z'; alli++)
 	{
 		putchar(alli);
