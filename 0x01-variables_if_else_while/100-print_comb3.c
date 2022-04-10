@@ -15,12 +15,12 @@ int main(void)
 		{
 			putchar(i);
 			putchar(k);
+			putchar(',');
+			putchar(' ');
 			if ((i == 47) && (k == 57))
 			{
 				break;
 			}
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
