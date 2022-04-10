@@ -13,8 +13,9 @@ int main(void)
 	{
 		for (k = 48; k <= 57; k++)
 		{
-			putchar(i, k);
-			if (i == 57 && k == 57)
+			putchar(i);
+			putchar(k);
+			if (i == k || i == 57 && k == 57)
 			{
 				break;
 			}
