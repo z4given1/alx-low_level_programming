@@ -9,16 +9,15 @@ int main(void)
 	char lwrcase;
 	char uprcase;
 
-	for (uprcase = 'A'; uprcase <= 'Z'; uprcase++)
-	{
-		putchar(uprcase);
-	}
 	for (lwrcase = 'a'; lwrcase <= 'z'; lwrcase++)
 	{
 		putchar(lwrcase);
 	}
+	for (uprcase = 'A'; uprcase <= 'Z'; uprcase++)
+	{
+		putchar(uprcase);
+	}
 
-	putchar('\n');
-	
+	putchar('\n');	
 	return (0);
 }
