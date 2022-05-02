@@ -1,13 +1,29 @@
+
+   
 #include <stdio.h>
+
 /**
- *main-print number of arguments passed.
- *@argc:number of commandline arguments.
- *@argv:pointer to an array of commmand line arguments.
- *Return:0-success, non-zero-fail.
+ * main - Print the name of the program
+ * @argc: Count arguments
+ * @argv: Arguments
+ *
+ * Return: Always 0 (Success)
  */
 
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
-	return (0);
+
+/*Declaring variables*/
+int count = 0;
+
+if (argc > 0)
+{
+/*WHILE - Print each arguments*/
+while (count < argc)
+{
+printf("%s\n", argv[count]);
+count++;
+}
+}
+return (0);
 }
