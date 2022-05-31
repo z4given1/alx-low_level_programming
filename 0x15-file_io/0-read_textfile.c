@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 /**
 * read_textfile - check the code for Holberton School students.
 * @filename: file to read and write
